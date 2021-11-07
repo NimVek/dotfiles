@@ -9,6 +9,8 @@ PACKAGES+=" xz-utils"
 
 sudo -v
 
+sudo apt-get update
+
 for i in ${PACKAGES}; do
     sudo apt-get install -y "${i}"
 done
