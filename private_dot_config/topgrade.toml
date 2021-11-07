@@ -1,0 +1,18 @@
+# Don't ask for confirmations
+assume_yes = true
+
+# Disable specific steps - same options as the command line flag
+disable = ["system"]
+
+# Do not ask to retry failed steps (default: false)
+no_retry = true
+
+# Run inside tmux
+run_in_tmux = true
+
+# Cleanup temporary or old files
+cleanup = true
+
+[firmware]
+# Offer to update firmware; if false just check for and display available updates
+upgrade = true

@@ -1,0 +1,4 @@
+Protocol 2
+IdentitiesOnly yes
+
+Include ~/.ssh/config.d/*

@@ -1,0 +1,9 @@
+[user]
+	name = NimVek
+	email = NimVek@users.noreply.github.com
+[credential]
+	helper = store
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[pull]
+	rebase = false

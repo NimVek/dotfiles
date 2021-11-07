@@ -1,0 +1,20 @@
+.local/share/omf:
+  type: archive
+  url: https://github.com/oh-my-fish/oh-my-fish/archive/v7.tar.gz
+  exact: true
+  stripComponents: 1
+.local/share/omf/pkg/git-refresh:
+  type: archive
+  url: https://github.com/avimehenwal/git-refresh/archive/master.tar.gz
+  exact: true
+  stripComponents: 1
+.local/share/omf/pkg/powerline:
+  type: archive
+  url: https://github.com/iamruinous/plugin-powerline/archive/master.tar.gz
+  exact: true
+  stripComponents: 1
+.local/share/omf/pkg/rustup:
+  type: archive
+  url: https://github.com/oh-my-fish/plugin-rustup/archive/master.tar.gz
+  exact: true
+  stripComponents: 1
