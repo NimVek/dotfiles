@@ -10,7 +10,16 @@ if ! command -v asdf >/dev/null 2>&1; then
     _ASDF_BASH="${_ASDF_DIR}/asdf.sh"
     if [[ ! -r ${_ASDF_BASH} ]]; then
         rm -rf "${_ASDF_DIR}"
-        git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
+        git clone https://github.com/asdf-vm/asdf.git "${_ASDF_DIR}"
+        pushd "${_ASDF_DIR}"
+        REVISION=$(git rev-list --tags --max-count=1 || true)
+        if [[ -n ${REVISION} ]]; then
+            TAG=$(git describe --tags "${REVISION}" || true)
+            if [[ -n ${TAG} ]]; then
+                git checkout "${TAG}"
+            fi
+        fi
+        popd
     fi
 
     # shellcheck source=/dev/null
