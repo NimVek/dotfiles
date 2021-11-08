@@ -3,7 +3,10 @@
 	email = NimVek@users.noreply.github.com
 [credential]
 	helper = store
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+[init]
+	defaultBranch = main
 [pull]
 	rebase = false
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
