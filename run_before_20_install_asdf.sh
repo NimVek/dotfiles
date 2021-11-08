@@ -16,7 +16,7 @@ if ! command -v asdf >/dev/null 2>&1; then
         if [[ -n ${REVISION} ]]; then
             TAG=$(git describe --tags "${REVISION}" || true)
             if [[ -n ${TAG} ]]; then
-                git checkout "${TAG}"
+                git -c advice.detachedHead=false checkout "${TAG}"
             fi
         fi
         popd
