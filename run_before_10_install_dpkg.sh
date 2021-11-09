@@ -7,6 +7,8 @@ PACKAGES="curl git"
 
 PACKAGES+=" xz-utils"
 
+PACKAGES+=" fish"
+
 sudo -v
 
 sudo apt-get update
