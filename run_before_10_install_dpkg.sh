@@ -9,6 +9,8 @@ PACKAGES+=" xz-utils"
 
 PACKAGES+=" fish"
 
+PACKAGES+=" powerline powerline-gitstatus"
+
 sudo -v
 
 sudo apt-get update
