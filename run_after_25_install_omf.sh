@@ -3,7 +3,7 @@
 set -o errexit
 set -o nounset
 
-PACKAGES="powerline asdf"
+PACKAGES="powerline asdf rustup git-refresh"
 
 INSTALLED=$(fish -c "omf --version" || true)
 
