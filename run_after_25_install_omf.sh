@@ -5,9 +5,14 @@ set -o nounset
 
 PACKAGES="powerline asdf"
 
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish /dev/stdin --noninteractive --yes
+INSTALLED=$(fish -c "omf --version" || true)
+
+if [[ -z ${INSTALLED} ]]; then
+    curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish /dev/stdin --noninteractive --yes
+fi
+
+for i in ${PACKAGES}; do
+    fish -c "omf install ${i}" || true
+done
 
 fish -c "omf update"
-for i in ${PACKAGES}; do
-    fish -c "omf install ${i}"
-done
