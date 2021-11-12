@@ -11,6 +11,8 @@ PACKAGES+=" fish"
 
 PACKAGES+=" powerline powerline-gitstatus"
 
+PACKAGES+=" rust-all"
+
 sudo -v
 
 sudo apt-get update
