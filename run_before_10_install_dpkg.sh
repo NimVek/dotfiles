@@ -11,7 +11,7 @@ PACKAGES+=" fish"
 
 PACKAGES+=" powerline powerline-gitstatus"
 
-PACKAGES+=" rust-all"
+#PACKAGES+=" rust-all"
 
 sudo -v
 
