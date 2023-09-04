@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: ShellCheck
       uses: ludeeus/action-shellcheck@master
       env:
@@ -29,7 +29,7 @@ jobs:
         CODESPACES: true
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Install
       run: ./install.sh
     - name: chezmoi data
